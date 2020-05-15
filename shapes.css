@@ -1,0 +1,99 @@
+* {
+    padding:0;
+    margin: 0;
+    
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rectangle {
+    height: 100px;
+    width: 250px;
+    background-color: rgb(241, 192, 31);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(247, 47, 12);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.round {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.triangle {
+    height: 0px;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(221, 30, 221);
+    margin: 20px 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.trapezoid {
+    height: 0px;
+    width: 100px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid rgb(12, 161, 62);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.triangledown {
+    height: 0px;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid rgb(221, 30, 221);
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: rgb(139, 175, 172);
+    height: 100vh;
+}
