@@ -15,6 +15,21 @@
     
 }
 
+
+
+  
+@keyframes square {
+    from {border-radius: 0%; background-color: blue;}
+    to {border-radius: 50%;background-color:cyan;}
+    
+}
+.square:hover {
+    animation-duration: 2s;
+    animation-name: square;
+    animation-fill-mode: forwards;
+     
+}
+
 .rectangle {
     height: 100px;
     width: 250px;
@@ -24,6 +39,17 @@
     justify-content: center;
     align-items: center;
 
+}
+@keyframes rectangle {
+    from {width: 250px;}
+    to {width: 400px;}
+}
+
+.rectangle:hover {
+    animation-name: rectangle;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 .circle {
@@ -38,6 +64,18 @@
 
 }
 
+@keyframes circle {
+    0% {border: none; background-color:  rgb(247, 47, 12);}
+    50% {border: 3px dotted rgb(247, 47, 12);background-color: rgb(229, 233, 16);}
+    100%{border: 3px solid rgb(247, 47, 12);background-color: rgb(16, 233, 99);}
+    
+}
+.circle:hover {
+    animation-duration: 3s;
+    animation-name: circle;
+    animation-fill-mode: forwards;
+     
+}
 .round {
     height: 100px;
     width: 100px;
@@ -48,6 +86,18 @@
     justify-content: center;
     align-items: center;
 
+}
+
+@keyframes round {
+    0% {background-color: none;}
+    100%{background-color: black;color: white;}
+    
+}
+.round:hover {
+    animation-duration: 3s;
+    animation-name: round;
+    animation-fill-mode: forwards;
+     
 }
 .triangle {
     height: 0px;
@@ -60,6 +110,22 @@
     justify-content: center;
     align-items: flex-end;
     
+}
+
+@keyframes triangle {
+    0% {border-left: 50px solid transparent;
+        border-right: 50px solid transparent;}
+    100%{border-left: 100px solid green;
+        border-right: 100px solid red;
+        border-top: 100px solid yellow;
+        }
+    
+}
+.triangle:hover {
+    animation-duration: 2s;
+    animation-name: triangle;
+    animation-fill-mode: forwards;
+     
 }
 
 .trapezoid {
@@ -75,6 +141,19 @@
 
 }
 
+@keyframes trapezoid {
+    0% {width: 100px; }
+    100%{width: 0;background-color: cadetblue;
+        }
+    
+}
+.trapezoid:hover {
+    animation-duration: 1s;
+    animation-name: trapezoid;
+    animation-fill-mode: forwards;
+     
+}
+
 .triangledown {
     height: 0px;
     width: 0;
@@ -88,6 +167,8 @@
 
 
 }
+
+
 
 .container {
     display: flex;
